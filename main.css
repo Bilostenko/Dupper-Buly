@@ -143,6 +143,7 @@ footer {
   width: 100%;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 .secondScreen__service>li {
