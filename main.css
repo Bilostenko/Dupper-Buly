@@ -45,8 +45,10 @@ footer {
   color: #FFFCFC;
   display: flex;
   gap: 40px;
-  margin-right: 5%;
+  margin-right: 2rem;
   cursor: pointer;
+  width: 60%;
+  overflow: hidden;
 }
 
 /* firstScreen */
@@ -57,6 +59,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .firstScreen__wrapper {
