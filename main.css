@@ -22,10 +22,15 @@ footer {
   margin: 0 auto;
   }
 
+header, main, footer {
+  max-width: 1920px;
+  margin: auto;
+}
+
 /* header */
 .header {
   height: 129px;
-  width: 100%;
+  width: calc(100vw - 21px);
   background-color: black;
   top: 0;
   z-index: 100;
@@ -47,7 +52,6 @@ footer {
   gap: 40px;
   margin-right: 2rem;
   cursor: pointer;
-  width: 60%;
   overflow: hidden;
 }
 
@@ -72,8 +76,7 @@ footer {
 
 .firstScreen__leftImg,
 .firstScreen__rightImg {
-  width: /* 370px; */ 20%;
-  height: 583px;
+  width: 19%; 
   align-self: center;
 }
 
