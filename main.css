@@ -16,13 +16,14 @@ a {
   color: inherit;
 }
 
-/* верстка по макету кажется сликшмо большой  */
 section,
 footer {
   margin: 0 auto;
-  }
+}
 
-header, main, footer {
+header,
+main,
+footer {
   max-width: 1920px;
   margin: auto;
 }
@@ -46,7 +47,7 @@ header, main, footer {
   font-family: 'Rosario';
   font-style: italic;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 1.875vw;
   color: #FFFCFC;
   display: flex;
   gap: 40px;
@@ -58,25 +59,16 @@ header, main, footer {
 /* firstScreen */
 .firstScreen {
   width: 100%;
-  height: 954px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
-}
-
-.firstScreen__wrapper {
-  width: 100vw;
-  height: 823px;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: space-between;
+  padding: 2%;
 }
 
 .firstScreen__leftImg,
 .firstScreen__rightImg {
-  width: 19%; 
+  width: 19%;
   align-self: center;
 }
 
@@ -86,13 +78,21 @@ header, main, footer {
   animation: slide-in 1s ease-out 1s forwards;
 }
 
+.firstScreen__left,
+.firstScreen__right {
+  width: 24%;
+}
+
 .firstScreen__left {
+  margin-left: 3%;
+  margin-right: 1%;
   opacity: 0;
   transform: translateX(-100%);
   animation: slide-in 1s ease-out forwards;
 }
 
 .firstScreen__right {
+  margin-right: 3%;
   opacity: 0;
   transform: translateX(100%);
   animation: slide-in 1s ease-out forwards;
@@ -115,24 +115,16 @@ header, main, footer {
 
 .firstScreen__centerImgs-img1,
 .firstScreen__centerImgs-img3 {
-  width: /* 465px; */ 100%;
-  height: 410px;
+  width: 100%;
   gap: 3%;
+  margin-bottom: 2vw;
 }
 
 .firstScreen__centerImgs-img2,
 .firstScreen__centerImgs-img4 {
-  width: /* 465px;  */ 100%;
-  height: 364px;
+  width: 100%;
+  
 }
-
-.firstScreen__centerImgs-img1,
-.firstScreen__centerImgs-img3 {
-  padding-bottom: 42px;
-}
-
-
-
 
 /* secondScreen */
 .secondScreen {
@@ -146,7 +138,7 @@ header, main, footer {
 
 .secondScreen__service {
   height: 951px;
-  width: 100%;
+  width: 50%;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -156,6 +148,7 @@ header, main, footer {
   position: absolute;
   left: 69px;
   top: 29px;
+  width: 100%;
 }
 
 .secondScreen__text {
@@ -195,7 +188,11 @@ header, main, footer {
   }
 }
 
-/* secondScreen */
+.secondScreen__scissorsImg {
+  width: 50%;
+}
+
+/* thirdScreen */
 .thirdScreen {
   width: 100%;
   height: 1080px;

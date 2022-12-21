@@ -1,3 +1,22 @@
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
+  .firstScreen {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
+  .firstScreen__leftImg,
+  .firstScreen__rightImg,
+  .firstScreen__left,
+  .firstScreen__right {
+    width: 49%;
+    margin: 0;
+  }
+
+  .firstScreen__leftImg,
+  .firstScreen__rightImg {
+    order: 2;
+    margin-top: 2vw;
+  }
+
+  
 }
