@@ -64,6 +64,7 @@ footer {
   justify-content: center;
   overflow: hidden;
   padding: 2%;
+  margin-bottom: 64px;
 }
 
 .firstScreen__leftImg,
@@ -123,17 +124,13 @@ footer {
 .firstScreen__centerImgs-img2,
 .firstScreen__centerImgs-img4 {
   width: 100%;
-  
+
 }
 
 /* secondScreen */
 .secondScreen {
-  width: 100%;
-  height: 1080px;
   display: flex;
-  align-items: center;
   justify-content: center;
-
 }
 
 .secondScreen__service {
@@ -142,13 +139,19 @@ footer {
   text-align: center;
   position: relative;
   overflow: hidden;
-}
+ }
 
 .secondScreen__service>li {
   position: absolute;
   left: 69px;
   top: 29px;
+  width: 35%;
+}
+
+.secondScreen__service>li>img {
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .secondScreen__text {
@@ -188,9 +191,13 @@ footer {
   }
 }
 
-.secondScreen__scissorsImg {
+.secondScreen__scissorsImg>img {
+  width: 100%;
+}
+.secondScreen__scissorsImg{
   width: 50%;
 }
+
 
 /* thirdScreen */
 .thirdScreen {

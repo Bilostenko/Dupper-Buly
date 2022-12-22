@@ -1,3 +1,56 @@
+@media screen and (max-width: 1669px) {
+
+  .secondScreen__service>li {
+    position: absolute;
+    left: 5px;
+    top: 29px;
+    width: 35%;
+    overflow: visible;
+  }
+
+  @keyframes rotation {
+    25% {
+      transform: translate(350px, 0);
+    }
+
+    50% {
+      transform: translate(350px, 470px);
+    }
+
+    75% {
+      transform: translate(0, 470px);
+    }
+  }
+
+  h1 {
+    margin-top: 10px;
+  }
+
+  .thirdScreen__masters {
+    gap: 1%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  @keyframes rotation {
+    25% {
+      transform: translate(350px, 0);
+    }
+
+    50% {
+      transform: translate(350px, 400px);
+    }
+
+    75% {
+      transform: translate(0, 400px);
+    }
+  }
+  .thirdScreen{
+    justify-content: inherit;
+  }
+
+}
+
 @media screen and (max-width: 992px) {
   .firstScreen {
     flex-wrap: wrap;
@@ -18,5 +71,5 @@
     margin-top: 2vw;
   }
 
-  
+
 }
