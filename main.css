@@ -29,6 +29,13 @@ footer {
 }
 
 /* header */
+.header__burger {
+  display: none; 
+}
+.fa-bars:before {
+  content: "\f0c9";
+  margin-right: 20px;
+}
 .header {
   height: 129px;
   width: calc(100vw - 21px);
